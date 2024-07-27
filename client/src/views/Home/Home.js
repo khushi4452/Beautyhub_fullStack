@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from "../../components/Navbar/Navbar"
 import {Link} from "react-router-dom"
-
+import cosmeticImg from "./cosmetic.jpg";
+import ProductCard from "../../components/ProductCard/ProductCard.js";
 
 function Home(){
   return (
@@ -34,10 +35,20 @@ function Home(){
    </button>
    </Link>
   </div>
- 
-    </div>  
+  </div>  
   </div>
-
+  <h1 className='text-center mb-4 mt-4'>our Product</h1>
+  <div>
+    <div className='product-card-container px-5 flex justify-center gap-x-5 flex-wrap '>
+     {DataTransfer.map((item)=> (
+      <ProductCard key={item.id} data={item}/>
+     ))} 
+    </div>
+  </div>
+  <hr className='mx-auto border-black-900 dark:border-black-900 max-w-screen-md max-w-screen-lg mb-10'>
+  </hr>
     </>
-  )
+  );
 }
+
+export default Home ;
