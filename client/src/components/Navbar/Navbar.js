@@ -33,9 +33,7 @@ return ( <>
  <Link to="/" className="text-black no-underline">
   Home
  </Link>
- <Link to="/about" className="text-black no-underline">
-   About
- </Link>
+ 
  <Link
    to="/addproduct"
   className="text-black no-underline">
@@ -87,8 +85,8 @@ className="text-black no-underline">
      </button>
      </div>
      </div>
-     </nav>
-     </div>
+   </nav>
+ </div>
 
     {/* Mobile Navbar (hidden by default) */}
     <div
