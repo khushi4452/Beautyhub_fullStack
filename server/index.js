@@ -6,6 +6,7 @@ import path from 'path';
 
 
 dotenv.config();
+import { getApiHealths } from './controllers/health.js'
 
 
 const app = express()
@@ -24,6 +25,7 @@ const connectionDB = () => {
 
 connectionDB();
 
+app.get('/api/v1/healths', getApiHealths);
 
 
 if (process.env.NODE_ENV === 'production') {
