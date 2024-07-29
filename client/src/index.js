@@ -12,6 +12,7 @@ import UpdateProduct from './components/UpdateProduct/UpdateProduct';
 import Signup from "./views/Signup/Signup";
 import Login from "./views/Login/Login";
 
+
 const router = createBrowserRouter([{
   path: '/',
   element:<Home/>
@@ -37,7 +38,8 @@ const router = createBrowserRouter([{
 {
   path: '/login',
   element: <Login/>
-}
+},
+
 
 ]);
 
