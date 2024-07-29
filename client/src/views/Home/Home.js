@@ -33,7 +33,7 @@ function Home() {
    Our vision is to provide the best quality ...
    </p>
  <p>
-   Our mission is to offer a curated selection of premium beauty products for all your skincare..  
+   Our mission is to offer a curated selection of premium beauty products for all your skincares..  
  </p>
            
            
